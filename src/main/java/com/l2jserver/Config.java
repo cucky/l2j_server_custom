@@ -689,6 +689,7 @@ public final class Config
 	public static int L2JMOD_CHAMPION_REWARD_QTY;
 	public static boolean L2JMOD_CHAMPION_ENABLE_VITALITY;
 	public static boolean L2JMOD_CHAMPION_ENABLE_IN_INSTANCES;
+        public static int L2JMOD_CHAMPION_ENABLE_AURA;
 	public static boolean TVT_EVENT_ENABLED;
 	public static boolean TVT_EVENT_IN_INSTANCE;
 	public static String TVT_EVENT_INSTANCE_FILE;
@@ -2183,6 +2184,8 @@ public final class Config
 			L2JMOD_CHAMPION_REWARD_QTY = L2JModSettings.getInt("ChampionRewardItemQty", 1);
 			L2JMOD_CHAMPION_ENABLE_VITALITY = L2JModSettings.getBoolean("ChampionEnableVitality", false);
 			L2JMOD_CHAMPION_ENABLE_IN_INSTANCES = L2JModSettings.getBoolean("ChampionEnableInInstances", false);
+                        L2JMOD_CHAMPION_ENABLE_AURA = L2JModSettings.getInt("ChampionEnableAura", 0);
+			if (L2JMOD_CHAMPION_ENABLE_AURA != 0 && L2JMOD_CHAMPION_ENABLE_AURA != 1 && L2JMOD_CHAMPION_ENABLE_AURA != 2) L2JMOD_CHAMPION_ENABLE_AURA = 0;
 			
 			TVT_EVENT_ENABLED = L2JModSettings.getBoolean("TvTEventEnabled", false);
 			TVT_EVENT_IN_INSTANCE = L2JModSettings.getBoolean("TvTEventInInstance", false);

@@ -189,7 +189,11 @@ public abstract class AbstractNpcInfo extends L2GameServerPacket
 			writeD(_allyCrest); // all crest
 			
 			writeC(_npc.isInsideZone(ZoneId.WATER) ? 1 : _npc.isFlying() ? 2 : 0); // C2
-			writeC(_npc.getTeam().getId());
+			if (Config.L2JMOD_CHAMPION_ENABLE){
+                            writeC(_npc.isChampion() ? Config.L2JMOD_CHAMPION_ENABLE_AURA : 0);
+			}else{
+                            writeC(0);
+			}
 			
 			writeF(_collisionRadius);
 			writeF(_collisionHeight);
