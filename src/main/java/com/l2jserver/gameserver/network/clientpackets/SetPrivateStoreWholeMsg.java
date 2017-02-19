@@ -25,7 +25,7 @@ import com.l2jserver.gameserver.util.Util;
 
 /**
  * @author KenM
- */
+ */ 
 public class SetPrivateStoreWholeMsg extends L2GameClientPacket
 {
 	private static final String _C_D0_4A_SETPRIVATESTOREWHOLEMSG = "[C] D0:4A SetPrivateStoreWholeMsg";

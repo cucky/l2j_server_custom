@@ -20,7 +20,7 @@ package com.l2jserver.gameserver.network.clientpackets;
 
 import java.util.logging.Level;
 import java.util.logging.LogRecord;
-import java.util.logging.Logger;
+import java.util.logging.Logger; 
 
 import com.l2jserver.Config;
 import com.l2jserver.gameserver.handler.ChatHandler;

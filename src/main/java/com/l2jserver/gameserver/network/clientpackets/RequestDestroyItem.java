@@ -21,7 +21,7 @@ package com.l2jserver.gameserver.network.clientpackets;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.logging.Level;
-
+ 
 import com.l2jserver.Config;
 import com.l2jserver.commons.database.pool.impl.ConnectionFactory;
 import com.l2jserver.gameserver.enums.PrivateStoreType;
