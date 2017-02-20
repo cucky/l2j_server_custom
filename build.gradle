@@ -134,7 +134,7 @@ task zip(type: Zip, dependsOn: build) {
 		from(dbInstGsJar)
 	}
 	
-	def fileName = 'L2J_Server_' + new Date().format("yyyy-MM-dd")
+	def fileName = 'L2J_Server_custom_' + new Date().format("yyyy-MM-dd")
 	baseName = fileName
 	println 'Build in build/distributions/' + fileName + '.zip'
 }

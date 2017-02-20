@@ -89,6 +89,12 @@ public class PcStat extends PlayableStat
 		{
 			return false;
 		}
+                
+                // Check, if exp gain isn't disabled by voiced command
+		if (activeChar.canOverrideCond(PcCondOverride.DISABLE_EXP_GAIN))
+		{
+			return false;
+		}
 		
 		if (!super.addExp(value))
 		{

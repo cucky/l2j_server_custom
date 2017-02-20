@@ -38,7 +38,8 @@ public enum PcCondOverride
 	DESTROY_ALL_ITEMS(12, "Overrides item destroy conditions"),
 	SEE_ALL_PLAYERS(13, "Overrides the conditions to see hidden players"),
 	TARGET_ALL(14, "Overrides target conditions"),
-	DROP_ALL_ITEMS(15, "Overrides item drop conditions");
+	DROP_ALL_ITEMS(15, "Overrides item drop conditions"),
+        DISABLE_EXP_GAIN(16, "Disables experience gain");
 	
 	private final int _mask;
 	private final String _descr;
