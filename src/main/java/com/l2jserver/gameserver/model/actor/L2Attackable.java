@@ -480,7 +480,7 @@ public class L2Attackable extends L2Npc
 							}
 							
 							exp *= penalty;
-							
+                                                        
 							// Check for an over-hit enabled strike
 							L2Character overhitAttacker = getOverhitAttacker();
 							if (isOverhit() && (overhitAttacker != null) && (overhitAttacker.getActingPlayer() != null) && (attacker == overhitAttacker.getActingPlayer()))
