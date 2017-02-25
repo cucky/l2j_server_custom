@@ -54,7 +54,7 @@ public final class Logout extends L2GameClientPacket
 		{
 			return;
 		}
-		
+                
 		if ((player.getActiveEnchantItemId() != L2PcInstance.ID_NONE) || (player.getActiveEnchantAttrItemId() != L2PcInstance.ID_NONE))
 		{
 			if (Config.DEBUG)
