@@ -65,7 +65,7 @@ public final class RequestRestart extends L2GameClientPacket
 			sendPacket(RestartResponse.valueOf(false));
 			return;
 		}
-		
+                
 		if (player.isLocked())
 		{
 			_log.warning("Player " + player.getName() + " tried to restart during class change.");
